@@ -160,8 +160,12 @@ function installDependency
     echo "Installing Matplotlib......................"
     sudo apt-get install -y python3-matplotlib
 
-    echo "Installing Distutils......................."
-    sudo apt-get install -y python3-distutils
+    # using setuptools in place of distutils.
+    echo "Installing Setuptools......................."
+    sudo apt-get install -y python3-setuptools
+
+    #echo "Installing Distutils......................."
+    #sudo apt-get install -y python3-distutils
 
     # Install NgVeri Depedencies
     echo "Installing Pip3............................"
