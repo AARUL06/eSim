@@ -172,7 +172,7 @@ function installDependency
     sudo apt install -y python3-pip
 
     echo "Installing Watchdog........................"
-    pip3 install watchdog
+    sudo apt-get install watchdog
 
     echo "Installing Hdlparse........................"
     pip3 install --upgrade https://github.com/hdl/pyhdlparser/tarball/master
