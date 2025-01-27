@@ -168,30 +168,30 @@ function installDependency
     #sudo apt-get install -y python3-distutils
 
     # Install NgVeri Depedencies
-    echo "Installing Pip3............................"
-    sudo apt install -y python3-pip
+    echo "Installing Pipx............................"
+    sudo apt install pipx
 
     echo "Installing Watchdog........................"
-    sudo apt-get install watchdog
+    pipx install watchdog
 
-    echo "Installing Hdlparse........................"
-    pip3 install --upgrade https://github.com/hdl/pyhdlparser/tarball/master
+    #echo "Installing Hdlparse........................"
+    #pip3 install --upgrade https://github.com/hdl/pyhdlparser/tarball/master
 
     echo "Installing Makerchip......................."
-    pip3 install makerchip-app
+    pipx install makerchip-app
 
     echo "Installing SandPiper Saas.................."
-    pip3 install sandpiper-saas
+    pipx install sandpiper-saas
 
    
     echo "Installing Hdlparse......................"
-    pip3 install hdlparse
+    pipx install hdlparse
 
     echo "Installing matplotlib................"
-    pip3 install matplotlib
+    pipx install matplotlib
 
     echo "Installing PyQt5............."
-    pip3 install PyQt5  
+    pipx install PyQt5  
 }
 
 
